@@ -1,2 +1,0 @@
-# bun-poc
-Bun POC 
