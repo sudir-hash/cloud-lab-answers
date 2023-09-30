@@ -1,14 +1,20 @@
 sudo true # just to prompt password once
-sudo apt update -y 
+
 
 #install jdk
 sudo add-apt-repository ppa:linuxuprising/java
+sudo apt update -y 
 sudo apt install default-jdk -y 
 sudo apt install openjdk-11-jdk -y 
 #set path and source
 echo "export JAVA_HOME=\"/usr/lib/jvm/java-11-openjdk-amd64\"" >> $HOME/.profile
 echo "export HADOOP_HOME=\"/opt/hadoop-3.3.1\"" >> $HOME/.profile
 source $HOME/.profile
+
+# verify installation
+echo $JAVA_HOME
+echo $HADOOP_HOME
+echo 'java installation complete'
 
 #download all required files
 wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz
@@ -20,6 +26,8 @@ sudo cp -r hadoop-3.3.1 "$HADOOP_HOME"
 #update path and source
 echo "export PATH=\"\$PATH:\$HADOOP_HOME/bin\"" >> $HOME/.profile
 source $HOME/.profile
+
+
 #cleanup
 rm -rf hadoop-3.3.1 hadoop-3.3.1.tar.gz
 
