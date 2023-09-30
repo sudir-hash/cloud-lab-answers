@@ -2,6 +2,7 @@ sudo true # just to prompt password once
 sudo apt update -y 
 
 #install jdk
+sudo add-apt-repository ppa:linuxuprising/java
 sudo apt install default-jdk -y 
 sudo apt install openjdk-11-jdk -y 
 #set path and source
