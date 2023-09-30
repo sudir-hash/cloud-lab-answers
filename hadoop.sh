@@ -1,6 +1,5 @@
 sudo true # just to prompt password once
 sudo apt update -y 
-sudo apt install curl -y
 
 #install jdk
 sudo apt install default-jdk -y 
