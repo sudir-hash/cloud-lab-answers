@@ -19,7 +19,6 @@ sudo wget -q -O - "https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.
 wget https://raw.githubusercontent.com/ErikSchierboom/sentencegenerator/master/samples/the-king-james-bible.txt --no-check-certificate
 
 # extract hadoop and install 
-tar xvf hadoop-3.3.1.tar.gz
 sudo mv hadoop $HOME
 
 # update path and source
