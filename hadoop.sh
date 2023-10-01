@@ -19,7 +19,7 @@ sudo wget -q -O - "https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.
 wget https://raw.githubusercontent.com/ErikSchierboom/sentencegenerator/master/samples/the-king-james-bible.txt --no-check-certificate
 
 # extract hadoop and install 
-sudo mv hadoop $HOME
+sudo mv hadoop-3.3.1 $HOME
 
 # update path and source
 echo "export PATH='$PATH:$HOME/hadoop-3.3.1/bin'" >> $HOME/.profile
