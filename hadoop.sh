@@ -20,10 +20,9 @@ wget https://raw.githubusercontent.com/ErikSchierboom/sentencegenerator/master/s
 
 # extract hadoop and install 
 tar xvf hadoop-3.3.1.tar.gz
-sudo cp -r hadoop-3.3.1 "$HADOOP_HOME"
 
 # update path and source
-echo "export PATH=\"\$PATH:\$HADOOP_HOME/bin\"" >> $HOME/.profile
+echo "export PATH=\"\$PATH:hadoop-3.3.1/bin\"" >> $HOME/.profile
 source $HOME/.profile
 
 
