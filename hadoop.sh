@@ -15,7 +15,7 @@ echo $HADOOP_HOME
 echo 'java installation complete'
 
 # download all required files
-wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz --no-check-certificate
+sudo wget -q -O - "https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz" --no-check-certificate | tar xvz 
 wget https://raw.githubusercontent.com/ErikSchierboom/sentencegenerator/master/samples/the-king-james-bible.txt --no-check-certificate
 
 # extract hadoop and install 
@@ -33,4 +33,4 @@ source $HOME/.profile
 # run hadoop
 mkdir input
 mv the-king-james-bible.txt input
-/opt/hadoop-3.3.1/bin/hadoop jar "$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.1.jar" wordcount input output
+hadoop-3.3.1/bin/hadoop jar "$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.1.jar" wordcount input output
