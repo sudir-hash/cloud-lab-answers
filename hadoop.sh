@@ -2,10 +2,9 @@ sudo true # just to prompt password once
 
 
 #install jdk
-sudo add-apt-repository ppa:linuxuprising/java
-sudo apt update -y 
-sudo apt install default-jdk -y 
-sudo apt install openjdk-11-jdk -y 
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt-get update
+sudo apt install openjdk-11-jdk -y
 #set path and source
 echo "export JAVA_HOME=\"/usr/lib/jvm/java-11-openjdk-amd64\"" >> $HOME/.profile
 echo "export HADOOP_HOME=\"/opt/hadoop-3.3.1\"" >> $HOME/.profile
