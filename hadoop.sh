@@ -19,17 +19,17 @@ sudo wget -q -O - "https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.
 wget https://raw.githubusercontent.com/ErikSchierboom/sentencegenerator/master/samples/the-king-james-bible.txt --no-check-certificate
 
 # extract hadoop and install 
-sudo mv hadoop-3.3.1 $HOME/hadoop
+sudo mv hadoop-3.3.1 $HADOOP_HOME
 
 # update path and source
-echo "export PATH='$PATH:$HOME/hadoop/bin'" >> $HOME/.profile
+echo "export PATH='$PATH:$HADOOP_HOME/bin'" >> $HOME/.profile
 source $HOME/.profile
 
 
 # cleanup
-# rm -rf hadoop-3.3.1 hadoop-3.3.1.tar.gz
+ rm -rf hadoop-3.3.1 hadoop-3.3.1.tar.gz
 
 # run hadoop
 mkdir input
 mv the-king-james-bible.txt input
-hadoop/bin/hadoop jar "$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.1.jar" wordcount input output
+$HADOOP_HOME/bin/hadoop jar "$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.1.jar" wordcount input output
