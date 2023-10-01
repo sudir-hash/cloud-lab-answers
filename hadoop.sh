@@ -15,8 +15,8 @@ echo $HADOOP_HOME
 echo 'java installation complete'
 
 # download all required files
-wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz
-wget https://raw.githubusercontent.com/ErikSchierboom/sentencegenerator/master/samples/the-king-james-bible.txt
+wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz --no-check-certificate
+wget https://raw.githubusercontent.com/ErikSchierboom/sentencegenerator/master/samples/the-king-james-bible.txt --no-check-certificate
 
 # extract hadoop and install 
 tar xvf hadoop-3.3.1.tar.gz
