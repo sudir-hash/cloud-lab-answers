@@ -1,9 +1,11 @@
-runtime: python37
+runtime: python27
 api_version: 1
-threadsafe: false
+threadsafe: true
 
 handlers:
-- url : /.*
-  script: main.py
-  secure: always
-  login: admin
+- url: /
+  static_files: project/index.html
+  upload: project/index.html
+
+- url: /
+  static_dir: project
