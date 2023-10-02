@@ -1,5 +1,6 @@
 echo "Checking for gcloud"
-echo $(gcloud --version)
+echo $(./google-cloud-sdk/bin/gcloud --version)
+
 # clone repo
 git clone -b gae-flask https://github.com/sudir-hash/cloud-lab-answers
 
