@@ -12,3 +12,10 @@ bash -c "$(curl -sSL https://raw.githubusercontent.com/sudir-hash/cloud-lab-answ
 ```
 
 ```
+
+## Task Scheduling 
+```
+git clone https://github.com/michaelfahmy/cloudsim-task-scheduling
+```
+
+
