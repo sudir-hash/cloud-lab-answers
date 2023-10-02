@@ -6,3 +6,4 @@ sudo wget -q -O - "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/go
 sudo apt-get update
 sudo apt install python2 -y
 sudo apt install python3 -y
+sudo apt install git 
