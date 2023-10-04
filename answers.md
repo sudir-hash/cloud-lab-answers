@@ -1,24 +1,18 @@
 # Sample flask app with app.yaml for GAE deployment
 ## app.yaml
 ```
-runtime: python37
+runtime: python27
 api_version: 1
 threadsafe: false
 
 handlers:
 - url : /.*
   script: main.py
-  secure: always
-  login: admin
 ```
 
 ## main.py
 ```
-from flask import Flask
-app = Flask(__name__)
-@app.route('/')
-def home():
-    return 'hello world'
+ print('hello world')
 ```
 # GAE web app
 gdrive for GAE web app [https://drive.google.com/file/d/18gHSvne6r11yT70X6x7HtmJlpLTBieYq/view]
