@@ -12,7 +12,7 @@ bash -c "$(curl -sSL https://raw.githubusercontent.com/sudir-hash/cloud-lab-answ
 ```
 bash -c "$(curl -sSL https://raw.githubusercontent.com/sudir-hash/cloud-lab-answers/main/gae-install.sh)"
 
-bash -c "$(curl -sSL https://raw.githubusercontent.com/sudir-hash/cloud-lab-answers/main/gae-flask.sh)"
+bash -c "$(curl -sSL https://raw.githubusercontent.com/sudir-hash/cloud-lab-answers/main/gae.sh)"
 
 ```
 
